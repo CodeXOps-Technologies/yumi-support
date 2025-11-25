@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Installation Guide - YUMI Theme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="documentation-wrapper">
+        <!-- Purchase Banner -->
+        <div class="purchase-banner no-print">
+            <div class="purchase-banner-content">
+                <div class="purchase-banner-text">
+                    <h3>🎨 Love YUMI Theme?</h3>
+                    <p>Get the complete theme with lifetime updates and premium support</p>
+                    <p class="purchase-banner-email">Contact us: <a href="mailto:contact@codexops.com">contact@codexops.com</a></p>
+                </div>
+                <a href="mailto:contact@codexops.com?subject=YUMI Theme Purchase Inquiry" class="purchase-btn">Buy YUMI Theme</a>
+            </div>
+        </div>
+
+        <header class="doc-header no-print">
+            <div class="container">
+                <h1>Installation Guide</h1>
+                <a href="index.html" class="back-link">← Back to Main Documentation</a>
+            </div>
+        </header>
+
+        <main class="doc-content">
+            <div class="container">
+                
+                <section class="doc-section">
+                    <h2>Method 1: Upload ZIP File (Recommended)</h2>
+                    
+                    <div class="steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Access Shopify Admin</h3>
+                                <p>Log in to your Shopify admin panel at: <code>your-store.myshopify.com/admin</code></p>
+                                <div class="screenshot-placeholder">
+                                    <p>📸 Screenshot: Shopify Admin Dashboard</p>
+                                    <p class="note">Size: 1200x800px</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Navigate to Themes</h3>
+                                <p>From the left sidebar, click: <strong>Online Store → Themes</strong></p>
+                                <div class="screenshot-placeholder">
+                                    <p>📸 Screenshot: Online Store menu expanded</p>
+                                    <p class="note">Highlight "Themes" option</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Add Theme</h3>
+                                <p>Scroll down to the "Theme Library" section and click <strong>"Add theme"</strong></p>
+                                <div class="screenshot-placeholder">
+                                    <p>📸 Screenshot: Theme Library section with "Add theme" button</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Upload ZIP File</h3>
+                                <p>Click <strong>"Upload ZIP file"</strong> from the dropdown menu</p>
+                                <div class="screenshot-placeholder">
+                                    <p>📸 Screenshot: Add theme dropdown showing upload option</p>
+                                </div>
+                                <div class="info-box">
+                                    <p><strong>Note:</strong> Make sure you have the YUMI theme ZIP file ready. Do not unzip the file before uploading.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h3>Select File</h3>
+                                <p>Click "Choose File" and select <code>yumi-v1.0.0.zip</code> from your computer</p>
+                                <div class="screenshot-placeholder">
+                                    <p>📸 Screenshot: File upload dialog</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">6</div>
+                            <div class="step-content">
+                                <h3>Wait for Upload</h3>
+                                <p>The theme will upload and install automatically. This may take 1-3 minutes.</p>
+                                <div class="screenshot-placeholder">
+                                    <p>📸 Screenshot: Upload progress indicator</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">7</div>
+                            <div class="step-content">
+                                <h3>Preview Theme</h3>
+                                <p>Once uploaded, YUMI will appear in your Theme Library. Click <strong>"Customize"</strong> to preview and edit</p>
+                                <div class="screenshot-placeholder">
+                                    <p>📸 Screenshot: YUMI theme card in Theme Library</p>
+                                    <p class="note">Show Customize, Preview, and Actions buttons</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="doc-section page-break">
+                    <h2>Method 2: Shopify CLI (Advanced)</h2>
+                    
+                    <div class="warning-box">
+                        <strong>⚠️ For Developers:</strong> This method requires command-line knowledge and is recommended for developers working on theme customization.
+                    </div>
+
+                    <h3>Prerequisites</h3>
+                    <ul class="checklist">
+                        <li>✅ Node.js (LTS version) installed</li>
+                        <li>✅ Shopify CLI installed</li>
+                        <li>✅ Git installed (optional)</li>
+                        <li>✅ Shopify Partner account or staff access</li>
+                    </ul>
+
+                    <h3>Installation Steps</h3>
+                    <div class="code-block">
+                        <h4>1. Install Shopify CLI</h4>
+                        <pre><code># Using npm
+npm install -g @shopify/cli @shopify/theme
+
+# Using Homebrew (Mac)
+brew tap shopify/shopify
+brew install shopify-cli</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <h4>2. Navigate to Theme Directory</h4>
+                        <pre><code>cd /path/to/yumi-theme</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <h4>3. Connect to Your Store</h4>
+                        <pre><code>shopify theme push --store your-store.myshopify.com</code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <h4>4. Or Use Development Mode</h4>
+                        <pre><code>shopify theme dev --store your-store.myshopify.com</code></pre>
+                        <p class="note">This creates a development theme and provides a preview URL</p>
+                    </div>
+                </section>
+
+                <section class="doc-section page-break">
+                    <h2>Post-Installation Checklist</h2>
+                    
+                    <div class="checklist-section">
+                        <h3>Essential Setup Steps</h3>
+                        <ul class="checklist">
+                            <li>☐ <strong>Upload Logo:</strong> Theme Settings → Logo → Upload your logo image</li>
+                            <li>☐ <strong>Set Favicon:</strong> Theme Settings → Logo → Upload favicon (32x32px)</li>
+                            <li>☐ <strong>Configure Colors:</strong> Theme Settings → Colors → Customize color schemes</li>
+                            <li>☐ <strong>Select Fonts:</strong> Theme Settings → Typography → Choose heading and body fonts</li>
+                            <li>☐ <strong>Setup Navigation:</strong> Online Store → Navigation → Configure menus</li>
+                            <li>☐ <strong>Configure Cart:</strong> Theme Settings → Cart → Choose cart type (drawer/page/notification)</li>
+                            <li>☐ <strong>Add Social Links:</strong> Theme Settings → Social Media → Add your social profiles</li>
+                            <li>☐ <strong>Enable Swatches:</strong> Theme Settings → Color Swatches → Configure product swatches</li>
+                        </ul>
+
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Theme Settings panel overview</p>
+                        </div>
+                    </div>
+
+                    <div class="checklist-section">
+                        <h3>Homepage Configuration</h3>
+                        <ul class="checklist">
+                            <li>☐ <strong>Add Header:</strong> Customize → Add header section</li>
+                            <li>☐ <strong>Add Hero Banner:</strong> Add Image Banner or Slideshow section</li>
+                            <li>☐ <strong>Add Collections:</strong> Add Featured Collection or Collection List section</li>
+                            <li>☐ <strong>Add Content Sections:</strong> Add Image with Text, Multicolumn, etc.</li>
+                            <li>☐ <strong>Add Footer:</strong> Customize footer with your information</li>
+                        </ul>
+
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Theme editor with sections panel</p>
+                        </div>
+                    </div>
+
+                    <div class="checklist-section">
+                        <h3>Testing & Quality Assurance</h3>
+                        <ul class="checklist">
+                            <li>☐ Test on desktop browsers (Chrome, Firefox, Safari, Edge)</li>
+                            <li>☐ Test on mobile devices (iOS and Android)</li>
+                            <li>☐ Test checkout process</li>
+                            <li>☐ Test product pages with different variants</li>
+                            <li>☐ Test cart functionality</li>
+                            <li>☐ Test search functionality</li>
+                            <li>☐ Test all navigation menus</li>
+                            <li>☐ Test contact forms</li>
+                            <li>☐ Check loading speed (Google PageSpeed Insights)</li>
+                            <li>☐ Verify mobile responsiveness</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="doc-section page-break">
+                    <h2>Common Installation Issues</h2>
+                    
+                    <div class="issue">
+                        <h3>❌ Upload Failed / File Too Large</h3>
+                        <p><strong>Problem:</strong> ZIP file exceeds Shopify's upload limit</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Ensure you're uploading the correct theme ZIP file</li>
+                            <li>The ZIP should be under 50MB</li>
+                            <li>Use Shopify CLI method if upload fails repeatedly</li>
+                        </ul>
+                    </div>
+
+                    <div class="issue">
+                        <h3>❌ Theme Not Appearing After Upload</h3>
+                        <p><strong>Problem:</strong> Theme doesn't show in Theme Library</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Refresh your browser</li>
+                            <li>Check if upload completed successfully (no error messages)</li>
+                            <li>Try uploading again</li>
+                            <li>Clear browser cache</li>
+                        </ul>
+                    </div>
+
+                    <div class="issue">
+                        <h3>❌ Theme Editor Not Loading</h3>
+                        <p><strong>Problem:</strong> Customize button doesn't work or editor is blank</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Clear browser cache and cookies</li>
+                            <li>Try a different browser</li>
+                            <li>Disable browser extensions temporarily</li>
+                            <li>Check your internet connection</li>
+                        </ul>
+                    </div>
+
+                    <div class="issue">
+                        <h3>❌ Sections Missing or Not Working</h3>
+                        <p><strong>Problem:</strong> Some sections don't appear in the editor</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Verify complete theme upload (check file size)</li>
+                            <li>Re-upload the theme</li>
+                            <li>Contact support with specific section names</li>
+                        </ul>
+                    </div>
+
+                    <div class="issue">
+                        <h3>❌ Errors After Publishing</h3>
+                        <p><strong>Problem:</strong> Theme shows errors on live site</p>
+                        <p><strong>Solution:</strong></p>
+                        <ul>
+                            <li>Always preview before publishing</li>
+                            <li>Check if all required settings are configured</li>
+                            <li>Revert to previous theme if needed</li>
+                            <li>Contact support with error details and screenshots</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="doc-section">
+                    <h2>Migration from Another Theme</h2>
+                    
+                    <div class="warning-box">
+                        <strong>⚠️ Important:</strong> Always backup your current theme before switching. Shopify keeps theme backups, but it's good practice to download a copy.
+                    </div>
+
+                    <h3>Data That Transfers Automatically</h3>
+                    <ul class="checklist">
+                        <li>✅ Products and collections</li>
+                        <li>✅ Customer data</li>
+                        <li>✅ Orders</li>
+                        <li>✅ Navigation menus</li>
+                        <li>✅ Pages and blog posts</li>
+                    </ul>
+
+                    <h3>Data That Needs Reconfiguration</h3>
+                    <ul class="checklist">
+                        <li>⚙️ Theme settings (colors, fonts, etc.)</li>
+                        <li>⚙️ Homepage layout and sections</li>
+                        <li>⚙️ Custom CSS/JavaScript</li>
+                        <li>⚙️ Third-party app integrations</li>
+                        <li>⚙️ Custom page templates</li>
+                    </ul>
+
+                    <h3>Migration Steps</h3>
+                    <ol>
+                        <li>Install YUMI as outlined above (don't publish yet)</li>
+                        <li>Customize YUMI to match your brand</li>
+                        <li>Test thoroughly using preview mode</li>
+                        <li>Schedule migration during low-traffic hours</li>
+                        <li>Publish YUMI theme</li>
+                        <li>Test all functionality immediately</li>
+                        <li>Monitor for 24-48 hours</li>
+                    </ol>
+                </section>
+
+                <section class="doc-section">
+                    <h2>Need Help?</h2>
+                    <div class="support-grid">
+                        <div class="support-card">
+                            <h3>📧 Email Support</h3>
+                            <p>support@codexops.com</p>
+                        </div>
+                        <div class="support-card">
+                            <h3>📚 Documentation</h3>
+                            <p><a href="index.html">View all guides</a></p>
+                        </div>
+                        <div class="support-card">
+                            <h3>💬 Live Chat</h3>
+                            <p>Available Mon-Fri 9am-5pm EST</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <footer class="doc-footer">
+            <div class="container">
+                <p>&copy; 2025 CodeXOps Technologies. All rights reserved.</p>
+                <p><a href="index.html">Back to Documentation Home</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

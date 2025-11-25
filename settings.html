@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Settings - YUMI Theme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="documentation-wrapper">
+        <!-- Purchase Banner -->
+        <div class="purchase-banner no-print">
+            <div class="purchase-banner-content">
+                <div class="purchase-banner-text">
+                    <h3>🎨 Love YUMI Theme?</h3>
+                    <p>Get the complete theme with lifetime updates and premium support</p>
+                    <p class="purchase-banner-email">Contact us: <a href="mailto:contact@codexops.com">contact@codexops.com</a></p>
+                </div>
+                <a href="mailto:contact@codexops.com?subject=YUMI Theme Purchase Inquiry" class="purchase-btn">Buy YUMI Theme</a>
+            </div>
+        </div>
+
+        <header class="doc-header no-print">
+            <div class="container">
+                <h1>Theme Settings Reference</h1>
+                <a href="index.html" class="back-link">← Back to Main Documentation</a>
+            </div>
+        </header>
+
+        <nav class="doc-nav no-print">
+            <div class="container">
+                <ul>
+                    <li><a href="#logo">Logo & Favicon</a></li>
+                    <li><a href="#menus">Mega Menus</a></li>
+                    <li><a href="#colors">Colors</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#layout">Layout</a></li>
+                    <li><a href="#buttons">Buttons & Inputs</a></li>
+                    <li><a href="#swatches">Color Swatches</a></li>
+                    <li><a href="#cart">Cart Settings</a></li>
+                    <li><a href="#social">Social Media</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="doc-content">
+            <div class="container">
+                
+                <!-- Logo & Favicon -->
+                <section id="logo" class="doc-section">
+                    <h2>Logo & Favicon</h2>
+                    <p class="section-intro">Customize your store's branding with your logo and favicon.</p>
+                    
+                    <div class="setting-item">
+                        <h3>Logo Image</h3>
+                        <p><strong>Location:</strong> Theme Settings → Logo → Logo Image</p>
+                        <p><strong>Type:</strong> Image Upload</p>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Logo upload field in theme settings</p>
+                        </div>
+                        <div class="info-box">
+                            <h4>Specifications:</h4>
+                            <ul>
+                                <li><strong>Recommended Size:</strong> 400px × 200px (or proportional)</li>
+                                <li><strong>Format:</strong> PNG (with transparency) or SVG</li>
+                                <li><strong>Max File Size:</strong> 500KB</li>
+                                <li><strong>Color Mode:</strong> RGB</li>
+                            </ul>
+                        </div>
+                        <div class="tip-box">
+                            <strong>💡 Tip:</strong> Use a PNG with transparent background for best results. SVG files provide perfect scaling at any size.
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Logo Width</h3>
+                        <p><strong>Location:</strong> Theme Settings → Logo → Logo Width</p>
+                        <p><strong>Type:</strong> Range Slider (50px - 300px)</p>
+                        <p><strong>Default:</strong> 100px</p>
+                        <p>Controls the maximum width of your logo on desktop. Mobile size adjusts automatically.</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Favicon</h3>
+                        <p><strong>Location:</strong> Theme Settings → Logo → Favicon</p>
+                        <p><strong>Type:</strong> Image Upload</p>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Favicon upload field</p>
+                        </div>
+                        <div class="info-box">
+                            <h4>Specifications:</h4>
+                            <ul>
+                                <li><strong>Required Size:</strong> 32px × 32px or 64px × 64px</li>
+                                <li><strong>Format:</strong> PNG or ICO</li>
+                                <li><strong>Design:</strong> Simple, recognizable at small sizes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Mega Menus -->
+                <section id="menus" class="doc-section page-break">
+                    <h2>Mega Menu Settings</h2>
+                    <p class="section-intro">YUMI includes three advanced mega menu styles for enhanced navigation.</p>
+
+                    <div class="setting-group">
+                        <h3>Extended Mega Menu</h3>
+                        <p>Full-featured mega menu with images, trending collections, and custom buttons.</p>
+                        
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Extended Mega Menu example</p>
+                            <p class="note">Show menu with images and trending section</p>
+                        </div>
+
+                        <div class="setting-item">
+                            <h4>Show Images on Mega Menu Links</h4>
+                            <p><strong>Location:</strong> Theme Settings → Extended Mega Menu</p>
+                            <p><strong>Type:</strong> Dropdown (Yes/No)</p>
+                            <p><strong>Default:</strong> Yes</p>
+                            <p>Enable/disable collection images in mega menu dropdown.</p>
+                        </div>
+
+                        <div class="setting-item">
+                            <h4>Trending Collection Image</h4>
+                            <p><strong>Type:</strong> Image Upload</p>
+                            <p><strong>Recommended Size:</strong> 400px × 500px</p>
+                            <p>Featured image displayed in the mega menu sidebar.</p>
+                        </div>
+
+                        <div class="setting-item">
+                            <h4>Show Trending Collection</h4>
+                            <p><strong>Type:</strong> Dropdown (Yes/No)</p>
+                            <p><strong>Default:</strong> Yes</p>
+                        </div>
+
+                        <div class="setting-item">
+                            <h4>Trending Collection URL</h4>
+                            <p><strong>Type:</strong> URL Field</p>
+                            <p>Link to the trending collection page.</p>
+                        </div>
+
+                        <div class="setting-item">
+                            <h4>Browse Button Label</h4>
+                            <p><strong>Type:</strong> Text</p>
+                            <p><strong>Default:</strong> "Browse more products"</p>
+                            <p>Customize the button text in the mega menu.</p>
+                        </div>
+
+                        <div class="setting-item">
+                            <h4>Browse Button Link</h4>
+                            <p><strong>Type:</strong> URL Field</p>
+                            <p>Destination for the browse button (e.g., /collections/all).</p>
+                        </div>
+
+                        <div class="setting-item">
+                            <h4>Button Colors</h4>
+                            <ul>
+                                <li><strong>Button Background Color:</strong> Default #FFFFFF</li>
+                                <li><strong>Button Text Color:</strong> Default #000000</li>
+                                <li><strong>Button Hover Background:</strong> Default #F5F5F5</li>
+                                <li><strong>Button Hover Text Color:</strong> Default #000000</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="setting-group">
+                        <h3>Image Mega Menu</h3>
+                        <p>Clean, image-focused mega menu style.</p>
+                        
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Image Mega Menu example</p>
+                        </div>
+
+                        <div class="setting-item">
+                            <h4>Card Background Color</h4>
+                            <p><strong>Type:</strong> Color Picker</p>
+                            <p><strong>Default:</strong> #FFFFFF</p>
+                        </div>
+
+                        <div class="setting-item">
+                            <h4>Card Title Color</h4>
+                            <p><strong>Type:</strong> Color Picker</p>
+                            <p><strong>Default:</strong> #000000</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Color Swatches -->
+                <section id="swatches" class="doc-section page-break">
+                    <h2>Color Swatches</h2>
+                    <p class="section-intro">Display product color variants as visual swatches instead of dropdowns.</p>
+
+                    <div class="screenshot-placeholder">
+                        <p>📸 Screenshot: Color swatches on product page</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Swatch Option Name</h3>
+                        <p><strong>Type:</strong> Text</p>
+                        <p><strong>Default:</strong> "Color"</p>
+                        <p>The exact name of your variant option (case-sensitive).</p>
+                        <div class="info-box">
+                            <strong>For multilingual stores:</strong> Enter multiple options separated by commas.<br>
+                            Example: <code>Color,Colour,Farbe,Couleur</code>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Swatch Type</h3>
+                        <p><strong>Type:</strong> Dropdown</p>
+                        <p><strong>Options:</strong></p>
+                        <ul>
+                            <li><strong>Color:</strong> Uses color codes or images</li>
+                            <li><strong>Variant Image:</strong> Uses the variant's product image</li>
+                        </ul>
+                        <p><strong>Default:</strong> Color</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Colors Configuration</h3>
+                        <p><strong>Type:</strong> Textarea</p>
+                        <p>Define color swatches using this format:</p>
+                        <div class="code-block">
+                            <pre><code>Black:#000000
+White:#f5f5f5
+Blue:#005eff
+Red:#c9002c</code></pre>
+                        </div>
+                        
+                        <div class="info-box">
+                            <h4>Advanced Options:</h4>
+                            <p><strong>Two-color swatches:</strong></p>
+                            <code>Red&Blue:#c9002c#005eff</code>
+                            
+                            <p><strong>Three-color swatches:</strong></p>
+                            <code>Tri-color:#ff0000#00ff00#0000ff</code>
+                            
+                            <p><strong>Image swatches:</strong></p>
+                            <code>Green kaki:green-kaki.png</code>
+                            <p class="note">Upload images to Files, use lowercase names with hyphens</p>
+                        </div>
+
+                        <div class="tip-box">
+                            <strong>💡 Default Colors Included:</strong> Black, White, Blue, Red, Pink, Brown, Olive, Purple, Grey, Beige, Yellow, Orange, Green
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Show Color Swatches on Collection Page</h3>
+                        <p><strong>Type:</strong> Checkbox</p>
+                        <p><strong>Default:</strong> Enabled</p>
+                        <p>Display color swatches on product cards in collection pages.</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Swatch Style</h3>
+                        <p><strong>Type:</strong> Dropdown</p>
+                        <p><strong>Options:</strong></p>
+                        <ul>
+                            <li>Round</li>
+                            <li>Square</li>
+                            <li>Square with round corners</li>
+                            <li>Portrait</li>
+                        </ul>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Different swatch style examples</p>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Swatch Size (Product Page)</h3>
+                        <p><strong>Type:</strong> Range Slider</p>
+                        <p><strong>Range:</strong> 20px - 60px</p>
+                        <p><strong>Default:</strong> 40px</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Collection Page Swatch Size</h3>
+                        <p><strong>Type:</strong> Range Slider</p>
+                        <p><strong>Range:</strong> 15px - 40px</p>
+                        <p><strong>Default:</strong> 25px</p>
+                    </div>
+                </section>
+
+                <!-- Colors -->
+                <section id="colors" class="doc-section page-break">
+                    <h2>Color Schemes</h2>
+                    <p class="section-intro">YUMI uses a color scheme system for consistent design across your store.</p>
+
+                    <div class="screenshot-placeholder">
+                        <p>📸 Screenshot: Color scheme picker in theme settings</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Color Scheme Groups</h3>
+                        <p>Each color scheme includes:</p>
+                        <ul>
+                            <li><strong>Background:</strong> Main background color</li>
+                            <li><strong>Background Gradient:</strong> Optional gradient overlay</li>
+                            <li><strong>Text:</strong> Primary text color</li>
+                            <li><strong>Button Background:</strong> Primary button color</li>
+                            <li><strong>Button Label:</strong> Button text color</li>
+                            <li><strong>Secondary Button Label:</strong> Secondary button text</li>
+                            <li><strong>Shadow:</strong> Shadow color for depth</li>
+                        </ul>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Cart Bubble Colors</h3>
+                        <p><strong>Location:</strong> Theme Settings → Colors → Cart Bubble</p>
+                        <ul>
+                            <li><strong>Cart Bubble Background:</strong> Default #000000</li>
+                            <li><strong>Cart Bubble Text:</strong> Default #FFFFFF</li>
+                        </ul>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Cart icon with bubble showing item count</p>
+                        </div>
+                    </div>
+
+                    <div class="tip-box">
+                        <strong>💡 Best Practice:</strong> Create 3-5 color schemes to maintain visual consistency while providing variety for different sections.
+                    </div>
+                </section>
+
+                <!-- Typography -->
+                <section id="typography" class="doc-section page-break">
+                    <h2>Typography</h2>
+                    <p class="section-intro">Control fonts and text sizes across your store.</p>
+
+                    <div class="screenshot-placeholder">
+                        <p>📸 Screenshot: Typography settings panel</p>
+                    </div>
+
+                    <div class="setting-group">
+                        <h3>Headings</h3>
+                        
+                        <div class="setting-item">
+                            <h4>Heading Font</h4>
+                            <p><strong>Type:</strong> Font Picker</p>
+                            <p>Choose from Shopify's font library or upload custom fonts.</p>
+                            <div class="info-box">
+                                <strong>Popular Choices:</strong> Montserrat, Raleway, Playfair Display, Lora
+                            </div>
+                        </div>
+
+                        <div class="setting-item">
+                            <h4>Heading Scale</h4>
+                            <p><strong>Type:</strong> Range Slider</p>
+                            <p><strong>Range:</strong> 100% - 200%</p>
+                            <p><strong>Default:</strong> 120%</p>
+                            <p>Adjusts the size of all headings proportionally.</p>
+                        </div>
+                    </div>
+
+                    <div class="setting-group">
+                        <h3>Body Text</h3>
+                        
+                        <div class="setting-item">
+                            <h4>Body Font</h4>
+                            <p><strong>Type:</strong> Font Picker</p>
+                            <p>Choose your main paragraph font.</p>
+                            <div class="info-box">
+                                <strong>Popular Choices:</strong> Inter, Open Sans, Roboto, Lato
+                            </div>
+                        </div>
+
+                        <div class="setting-item">
+                            <h4>Body Scale</h4>
+                            <p><strong>Type:</strong> Range Slider</p>
+                            <p><strong>Range:</strong> 100% - 150%</p>
+                            <p><strong>Default:</strong> 110%</p>
+                            <p>Adjusts body text size globally.</p>
+                        </div>
+                    </div>
+
+                    <div class="tip-box">
+                        <strong>💡 Accessibility:</strong> Keep body text at least 16px (100%) for optimal readability.
+                    </div>
+                </section>
+
+                <!-- Layout Settings -->
+                <section id="layout" class="doc-section page-break">
+                    <h2>Layout Settings</h2>
+                    
+                    <div class="setting-item">
+                        <h3>Page Width</h3>
+                        <p><strong>Type:</strong> Range Slider</p>
+                        <p><strong>Range:</strong> 1000px - 1600px</p>
+                        <p><strong>Default:</strong> 1600px</p>
+                        <p>Maximum width of your store's content area.</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Section Spacing</h3>
+                        <p><strong>Type:</strong> Range Slider</p>
+                        <p><strong>Range:</strong> 0px - 100px</p>
+                        <p><strong>Default:</strong> 0px</p>
+                        <p>Vertical spacing between sections.</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Grid Horizontal Spacing</h3>
+                        <p><strong>Type:</strong> Range Slider</p>
+                        <p><strong>Range:</strong> 4px - 40px</p>
+                        <p><strong>Default:</strong> 20px</p>
+                        <p>Horizontal gap between grid items (products, collections).</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Grid Vertical Spacing</h3>
+                        <p><strong>Type:</strong> Range Slider</p>
+                        <p><strong>Range:</strong> 4px - 40px</p>
+                        <p><strong>Default:</strong> 20px</p>
+                        <p>Vertical gap between grid items.</p>
+                    </div>
+                </section>
+
+                <!-- Animation Settings -->
+                <section id="animations" class="doc-section page-break">
+                    <h2>Animations</h2>
+                    
+                    <div class="setting-item">
+                        <h3>Reveal on Scroll</h3>
+                        <p><strong>Type:</strong> Checkbox</p>
+                        <p><strong>Default:</strong> Enabled</p>
+                        <p>Animate elements as they scroll into view.</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Hover Elements Animation</h3>
+                        <p><strong>Type:</strong> Dropdown</p>
+                        <p><strong>Options:</strong></p>
+                        <ul>
+                            <li><strong>Default:</strong> Standard hover effects</li>
+                            <li><strong>Vertical Lift:</strong> Cards lift upward on hover</li>
+                            <li><strong>3D Lift:</strong> Cards lift with shadow depth</li>
+                        </ul>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Three hover animation examples side-by-side</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Buttons & Inputs -->
+                <section id="buttons" class="doc-section page-break">
+                    <h2>Buttons & Form Elements</h2>
+                    
+                    <h3>Button Styling</h3>
+                    <div class="setting-item">
+                        <h4>Border Thickness</h4>
+                        <p><strong>Range:</strong> 0px - 12px | <strong>Default:</strong> 1px</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Border Opacity</h4>
+                        <p><strong>Range:</strong> 0% - 100% | <strong>Default:</strong> 100%</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Corner Radius</h4>
+                        <p><strong>Range:</strong> 0px - 40px | <strong>Default:</strong> 0px</p>
+                        <p>0px = sharp corners, 40px = fully rounded</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Shadow Settings</h4>
+                        <ul>
+                            <li><strong>Shadow Opacity:</strong> 0% - 100% (Default: 0%)</li>
+                            <li><strong>Horizontal Offset:</strong> -12px to 12px (Default: 0px)</li>
+                            <li><strong>Vertical Offset:</strong> -12px to 12px (Default: 0px)</li>
+                            <li><strong>Shadow Blur:</strong> 0px - 20px (Default: 0px)</li>
+                        </ul>
+                    </div>
+
+                    <h3>Variant Pills Styling</h3>
+                    <p>Style for variant option buttons (size, material, etc.)</p>
+                    <ul>
+                        <li><strong>Border Thickness:</strong> 0-12px (Default: 1px)</li>
+                        <li><strong>Border Opacity:</strong> 0-100% (Default: 55%)</li>
+                        <li><strong>Corner Radius:</strong> 0-40px (Default: 40px)</li>
+                        <li>Shadow controls (same as buttons)</li>
+                    </ul>
+
+                    <h3>Input Fields Styling</h3>
+                    <ul>
+                        <li><strong>Border Thickness:</strong> 0-12px (Default: 1px)</li>
+                        <li><strong>Border Opacity:</strong> 0-100% (Default: 55%)</li>
+                        <li><strong>Corner Radius:</strong> 0-40px (Default: 12px)</li>
+                        <li>Shadow controls (same as buttons)</li>
+                    </ul>
+                </section>
+
+                <!-- Product Cards -->
+                <section id="cards" class="doc-section page-break">
+                    <h2>Product Cards</h2>
+                    
+                    <div class="setting-item">
+                        <h3>Card Style</h3>
+                        <p><strong>Type:</strong> Dropdown</p>
+                        <p><strong>Options:</strong></p>
+                        <ul>
+                            <li><strong>Standard:</strong> Clean, minimal design</li>
+                            <li><strong>Card:</strong> With background and border</li>
+                            <li><strong>Card 2 (Modern):</strong> Modern elevated style</li>
+                            <li><strong>Card 3:</strong> Alternative card design</li>
+                        </ul>
+                        <p><strong>Default:</strong> Card 3</p>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Four card styles displayed in grid</p>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Card Color Scheme</h3>
+                        <p><strong>Type:</strong> Color Scheme Picker</p>
+                        <p><strong>Default:</strong> Scheme 2</p>
+                        <p>Applies to product cards throughout the store.</p>
+                    </div>
+                </section>
+
+                <!-- Collection List Settings -->
+                <section id="collection-cards" class="doc-section page-break">
+                    <h2>Collection List Cards</h2>
+                    
+                    <div class="setting-item">
+                        <h3>Card Badge Color</h3>
+                        <p><strong>Type:</strong> Color Picker</p>
+                        <p><strong>Default:</strong> #166792</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Card Badge Text Color</h3>
+                        <p><strong>Default:</strong> #FFFFFF</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Card Content Background</h3>
+                        <p><strong>Default:</strong> #111822</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Card Title Text Color</h3>
+                        <p><strong>Default:</strong> #FFFFFF</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Image Ratio</h3>
+                        <p><strong>Options:</strong> Portrait / Square / Landscape</p>
+                        <p><strong>Default:</strong> Square</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Card Hover Effect</h3>
+                        <p><strong>Options:</strong></p>
+                        <ul>
+                            <li><strong>None:</strong> No animation</li>
+                            <li><strong>Lift:</strong> Card lifts on hover</li>
+                            <li><strong>Zoom image:</strong> Image zooms in</li>
+                            <li><strong>Fade overlay:</strong> Overlay fades in</li>
+                        </ul>
+                        <p><strong>Default:</strong> Lift</p>
+                    </div>
+                </section>
+
+                <!-- Cart Settings -->
+                <section id="cart" class="doc-section page-break">
+                    <h2>Cart Settings</h2>
+                    
+                    <div class="setting-item">
+                        <h3>Cart Type</h3>
+                        <p><strong>Type:</strong> Dropdown</p>
+                        <p><strong>Options:</strong></p>
+                        <ul>
+                            <li><strong>Drawer:</strong> Slides in from right side (Recommended)</li>
+                            <li><strong>Page:</strong> Dedicated cart page</li>
+                            <li><strong>Notification:</strong> Small popup notification</li>
+                        </ul>
+                        <p><strong>Default:</strong> Drawer</p>
+                        <div class="screenshot-placeholder">
+                            <p>📸 Screenshot: Three cart type examples</p>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Show Vendor</h3>
+                        <p><strong>Type:</strong> Checkbox</p>
+                        <p><strong>Default:</strong> Enabled</p>
+                        <p>Display product vendor/brand in cart.</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Show Cart Note</h3>
+                        <p><strong>Type:</strong> Checkbox</p>
+                        <p><strong>Default:</strong> Disabled</p>
+                        <p>Allow customers to add special instructions.</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Cart Drawer Collection</h3>
+                        <p><strong>Type:</strong> Collection Picker</p>
+                        <p>Display recommended products in cart drawer.</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h3>Cart Color Scheme</h3>
+                        <p><strong>Default:</strong> Scheme 1</p>
+                    </div>
+
+                    <h3>Free Shipping Bar</h3>
+                    <div class="setting-item">
+                        <h4>Show Free Shipping Bar</h4>
+                        <p><strong>Type:</strong> Checkbox</p>
+                        <p><strong>Default:</strong> Enabled</p>
+                        <p>Display progress bar toward free shipping threshold.</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Minimum Free Shipping</h4>
+                        <p><strong>Type:</strong> Number</p>
+                        <p><strong>Default:</strong> 50</p>
+                        <p>Amount required for free shipping (in store currency).</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Progress Bar Color</h4>
+                        <p><strong>Default:</strong> #c77dff</p>
+                    </div>
+                </section>
+
+                <!-- Social Media -->
+                <section id="social" class="doc-section page-break">
+                    <h2>Social Media Links</h2>
+                    <p>Add your social media profile URLs. These appear in the footer and other designated areas.</p>
+                    
+                    <div class="setting-list">
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                            <li>TikTok</li>
+                            <li>Twitter/X</li>
+                            <li>Snapchat</li>
+                            <li>Pinterest</li>
+                            <li>Tumblr</li>
+                            <li>Vimeo</li>
+                        </ul>
+                    </div>
+
+                    <div class="tip-box">
+                        <strong>💡 Tip:</strong> Enter full URLs (e.g., https://instagram.com/yourbrand). Icons auto-populate based on entered links.
+                    </div>
+                </section>
+
+                <!-- Additional Settings -->
+                <section id="additional" class="doc-section page-break">
+                    <h2>Additional Settings</h2>
+                    
+                    <h3>Search Settings</h3>
+                    <div class="setting-item">
+                        <h4>Predictive Search Enabled</h4>
+                        <p><strong>Default:</strong> Enabled</p>
+                        <p>Show search results as users type.</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Show Vendor in Search</h4>
+                        <p><strong>Default:</strong> Disabled</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Show Price in Search</h4>
+                        <p><strong>Default:</strong> Disabled</p>
+                    </div>
+
+                    <h3>Currency Format</h3>
+                    <div class="setting-item">
+                        <h4>Show Currency Code</h4>
+                        <p><strong>Default:</strong> Enabled</p>
+                        <p>Display currency codes (USD, EUR, etc.) with prices.</p>
+                    </div>
+
+                    <h3>Brand Information</h3>
+                    <div class="setting-item">
+                        <h4>Brand Headline</h4>
+                        <p><strong>Type:</strong> Rich Text</p>
+                        <p>Short tagline about your brand.</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Brand Description</h4>
+                        <p><strong>Type:</strong> Rich Text</p>
+                        <p>Longer brand story (used in footer/about sections).</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Brand Image</h4>
+                        <p><strong>Type:</strong> Image Upload</p>
+                        <p>Brand logo or representative image.</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Brand Image Width</h4>
+                        <p><strong>Range:</strong> 50px - 550px</p>
+                        <p><strong>Default:</strong> 100px</p>
+                    </div>
+
+                    <h3>Badge Settings</h3>
+                    <div class="setting-item">
+                        <h4>Badge Position</h4>
+                        <p><strong>Options:</strong> Bottom Left / Bottom Right / Top Left / Top Right</p>
+                        <p><strong>Default:</strong> Top Left</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Badge Corner Radius</h4>
+                        <p><strong>Range:</strong> 0px - 40px</p>
+                        <p><strong>Default:</strong> 40px</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Sale Badge Color Scheme</h4>
+                        <p><strong>Default:</strong> Scheme 5</p>
+                    </div>
+
+                    <div class="setting-item">
+                        <h4>Sold Out Badge Color Scheme</h4>
+                        <p><strong>Default:</strong> Scheme 3</p>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <footer class="doc-footer">
+            <div class="container">
+                <p>&copy; 2025 CodeXOps Technologies. All rights reserved.</p>
+                <p><a href="index.html">Back to Documentation Home</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
